@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(for dir in */)",
+      "Bash(done)",
+      "Bash(grep:*)",
+      "Bash(while read dir)",
+      "Bash(find:*)",
+      "Bash(xargs rm:*)",
+      "Bash(for dir in config gcm GCMs observed original sst-indices \"Rayong climate\")",
+      "Bash(do echo \"=== $dir ===\")",
+      "Bash(awk:*)",
+      "Bash(git config:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nInitial release: Statistical Downscaling Climate Models v1.0\n\nThis release represents the cleaned and documented version of R-based \nstatistical downscaling methods developed during doctoral and post-doctoral \nresearch (2006-2015) in computational hydrology.\n\nMajor components:\n- 276 R analysis scripts organized into 8 modules\n- Multi-GCM ensemble downscaling methods\n- ARIMA time series forecasting\n- Moran''s I-based stochastic weather generation\n- Sample datasets and configuration files\n- Comprehensive documentation (README, overview, cleanup plan)\n\nRepository cleanup summary:\n- Reduced from 136,750 to 1,655 files (98.8% reduction)\n- Removed generated outputs, retained source code and inputs\n- Reorganized into modular structure for reproducibility\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git reset:*)",
+      "Bash(git tag -a v1.0 -m \"$(cat <<''EOF''\nVersion 1.0 - Initial Public Release\n\nStatistical Downscaling of Climate Models for Regional Hydrology\n\nThis release marks the first public availability of methods developed \nduring 2006-2015 doctoral and post-doctoral research.\n\nKey Features:\n- Multi-GCM ensemble downscaling (CGCM2, CSIRO2, ECHAM4, HadCM3, PCM)\n- SRES scenario support (A1, A2, B1, B2)\n- SST teleconnection integration (ENSO, IOD)\n- Moran''s I spatial autocorrelation preservation\n- 276 R scripts across 8 analysis modules\n- Comprehensive documentation for reproducibility\n\nResearch Period: 2006-2015\nDocumentation: See README.md for complete methodology and usage\nLicense: MIT with academic use notice\nEOF\n)\")",
+      "Bash(git commit:*)",
+      "Bash(git tag:*)",
+      "Bash(git restore:*)",
+      "Bash(git log:*)",
+      "Bash(git push:*)",
+      "Bash(gh release create v1.0 --title \"Version 1.0 - Initial Public Release\" --notes \"$(cat <<''EOF''\n# Statistical Downscaling of Climate Models for Regional Hydrology\n\nThis release marks the first public availability of methods developed during 2006-2015 doctoral and post-doctoral research.\n\n## Key Features\n\n- **Multi-GCM ensemble downscaling** supporting 5 models (CGCM2, CSIRO2, ECHAM4, HadCM3, PCM)\n- **SRES scenario support** (A1, A2, B1, B2)\n- **SST teleconnection integration** (ENSO, IOD)\n- **Moran''s I spatial autocorrelation** preservation for stochastic weather generation\n- **276 R scripts** across 8 analysis modules\n- **Comprehensive documentation** for reproducibility\n\n## Components\n\n### Core Analysis Modules\n- ML-regression-multiGCM: Multi-GCM machine learning regression\n- multi-regression model: Multiple regression for climate variables\n- Stochastic: Spatial weather generation using Moran''s I\n- arima: ARIMA time series modeling\n- data-processing: Regional data extraction\n- filling-NA: Missing data imputation\n- cross-correlation: GCM-observation correlation analysis\n- basic time series analysis: Exploratory analysis\n\n### Capabilities\n- Calibration/verification periods: 1971-1985/1986-1999 or 1971-1999/2000-2006\n- Predictions: 1971-2099\n- Configuration-driven approach for flexible model combinations\n- Supports GCMs only, High-resolution only, GCMs+High-res, with/without SSTs\n\n## Research Period\n2006-2015\n\n## Documentation\nSee README.md for complete methodology, usage instructions, and project overview.\n\n## License\nMIT with academic use notice\n\n---\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\nEOF\n)\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
